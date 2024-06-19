@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -10,7 +9,7 @@
 
 <div class="column4">
     <h1>Início de Sessão</h1>
-    <form method="post" action="login1.php"> <!-- Action para o script de login -->
+    <form method="post" action="login1.php"> 
         <div class="form-group">
             <label for="login-email">Email</label>
             <input type="email" id="login-email" name="email" class="input123" placeholder="Insira o seu email" required>
@@ -22,9 +21,10 @@
         <button type="submit" class="btn" style="background-color: aliceblue; color: black; margin-top: 10px">Login</button>
     </form>
 </div>
+
 <div class="column5">
     <h1>Registro</h1>
-    <form method="post" action="register.php"> <!-- Action para o script de registro -->
+    <form method="post" action="register.php"> 
         <div class="form-group">
             <label for="reg-nome">Nome Completo</label>
             <input type="text" id="reg-nome" name="nome" class="input123" placeholder="Insira o Nome Completo" required>
@@ -53,5 +53,6 @@
         <button type="reset" class="btn" style="background-color: aliceblue; color: black; margin-top: 10px">Limpar</button>
     </form>
 </div>
+
 </body>
 </html>

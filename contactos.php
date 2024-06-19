@@ -1,15 +1,15 @@
 <?php
 global $conn;
-include 'db.php'; // Certifique-se de que o arquivo db.php está incluído
+include 'db.php'; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Captura os dados do formulário
+
     $nome = $conn->real_escape_string($_POST['nome']);
     $email = $conn->real_escape_string($_POST['email']);
     $assunto = $conn->real_escape_string($_POST['assunto']);
     $mensagem = $conn->real_escape_string($_POST['mensagem']);
 
-    // Prepara a query SQL para inserção na base de dados
+
     $sql = "INSERT INTO contactos (nome, email, assunto, mensagem) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
     if ($stmt === false) {
@@ -41,6 +41,7 @@ $conn->close();
     <p>Viseu: 232981325</p>
     <p>Cabeceiras: 253662133</p>
 </div>
+
 <div class="column5">
     <h2>Entre em Contato</h2>
     <form method="post">
@@ -64,6 +65,7 @@ $conn->close();
         <button type="reset" class="btn" style="background-color: aliceblue">Limpar</button>
     </form>
 </div>
+
 <img class="img1234" src="/imagens/mapa.png">
 </body>
 </html>

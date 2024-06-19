@@ -2,7 +2,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-include 'navbar.php';  // Inclui a barra de navegação
+include 'navbar.php'; 
 ?>
 
 <!DOCTYPE html>
@@ -17,13 +17,13 @@ include 'navbar.php';  // Inclui a barra de navegação
 <body>
 <div class="container">
     <?php
-    // Roteamento simples para carregar diferentes páginas com base na variável 'r'
+
     if (isset($_GET['r'])) {
         $page = $_GET['r'] . '.php';
         if (file_exists($page)) {
             include $page;
         } else {
-            echo "<p>Página não encontrada.</p>";  // Mensagem de erro caso a página não exista
+            echo "<p>Página não encontrada.</p>"; 
         }
     } else {
         echo "<h1>Bem-vindo à Clínica Bragança</h1>";
