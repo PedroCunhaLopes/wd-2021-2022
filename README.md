@@ -14,9 +14,9 @@
 - MariaDB (MySql)
   
   In this project there are some flaws such as,
-- Lack of CRUD
-- Unattractive appearance
-- Lack of exam appointments
-- Lack of any type of password security
+    - Lack of CRUD
+    - Unattractive appearance
+    - Lack of exam appointments
+    - Lack of any type of password security
 
   
